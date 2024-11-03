@@ -1,4 +1,4 @@
-import unittest, time
+import unittest
 from solution_9 import Solution
 
 class Test9Solution(unittest.TestCase):
