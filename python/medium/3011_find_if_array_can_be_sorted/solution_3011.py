@@ -1,7 +1,9 @@
+from typing import List
+
 class Solution:
     # accepted
     # 8ms 65% runtime 79% on memory
-    def canSortArray(self, nums) -> bool:
+    def canSortArray(self, nums: List[int]) -> bool:
         final_list = self.getSortedLists(nums)
         if len(final_list) == 1: return True
         
