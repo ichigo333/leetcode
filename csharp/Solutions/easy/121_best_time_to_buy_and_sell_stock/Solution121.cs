@@ -5,7 +5,7 @@ public class Solution121 {
     //accepted - time 100% mem 54%
     //Complexity: O(n) & Space O(1)
     //two pointers algorithm / also sliding window?
-    public int MaxProfit111(int[] prices) {
+    public int MaxProfit(int[] prices) {
         var left = prices[0];
         var right = 0;
         var maxProfit = 0;
@@ -24,7 +24,7 @@ public class Solution121 {
 
     //Dynamic Programming solution
     //Complexity: O(n) & Space O(1)
-    public int MaxProfit(int[] prices) {
+    public int MaxProfitDPSolution(int[] prices) {
         int minPrice = int.MaxValue;
         int maxProfit = 0;
 
