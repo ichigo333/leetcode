@@ -20,9 +20,6 @@ public class Solution20 {
         return stack.Count == 0;
      }
 
-        
-
-
     // Accepted - beats 30% time 29% mem
     public bool IsValidFirstAttempt(string input) {
         var braceDict = new Dictionary<char, char> {
