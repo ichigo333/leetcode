@@ -21,6 +21,7 @@ public class Solution1431 {
 
     //official - somehow worse?
     //beats 56% time and 59% mem
+    //O(n)
     public IList<bool> KidsWithCandiesOfficial(int[] candies, int extraCandies) {
         bool[] result = new bool[candies.Length];
         var maxCandies = candies.Max();
