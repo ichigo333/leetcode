@@ -38,3 +38,7 @@ class Test0345Solution(unittest.TestCase):
         solution = Solution()
 
         self.assertEqual(solution.reverseVowels(input), result)
+
+
+if __name__ == '__main__':
+    unittest.main()

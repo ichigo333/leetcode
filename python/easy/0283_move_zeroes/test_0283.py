@@ -16,3 +16,6 @@ class Test0283Solution(unittest.TestCase):
         result = [1,3,12,0,0]
         solution.moveZeroes(nums)
         self.assertListEqual(nums, result)
+
+if __name__ == '__main__':
+    unittest.main()
