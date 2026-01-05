@@ -51,23 +51,23 @@ def remove_kth_from_end(ll: LinkedList, k):
 
 
 
-my_linked_list = LinkedList(1)
-my_linked_list.append(2)
-my_linked_list.append(3)
-my_linked_list.append(4)
-my_linked_list.append(5)
+# my_linked_list = LinkedList(1)
+# my_linked_list.append(2)
+# my_linked_list.append(3)
+# my_linked_list.append(4)
+# my_linked_list.append(5)
 
 
-k = 2
+# k = 2
 
-print("="*10)
-print_head(remove_kth_from_end(my_linked_list, k))
+# print("="*10)
+# print_head(remove_kth_from_end(my_linked_list, k))
 
 
-print("="*10)
-my_linked_list2 = LinkedList(1)
-my_linked_list2.append(2)
-print_head(remove_kth_from_end(my_linked_list2, k))
+# print("="*10)
+# my_linked_list2 = LinkedList(1)
+# my_linked_list2.append(2)
+# print_head(remove_kth_from_end(my_linked_list2, k))
 
 
 ### Faster solution ?
@@ -78,6 +78,28 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+# Helper functions
+
+def get_list_length(head: ListNode):
+        count = 0
+        current = head
+        while current:
+            count += 1
+            current = current.next
+
+        return count
+
+def get_list_values(head: ListNode):
+    results = []
+    current = head
+
+    while current:
+        results.append(current.val)
+        current = current.next
+
+    return results
+
         
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:

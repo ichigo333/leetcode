@@ -1,5 +1,5 @@
 class Solution:
-    def makeFancyString(self, s: str) -> str:
+    def firstAttempt(self, s: str) -> str:
         result = ""
         previous = ""
         found_two = False
@@ -15,11 +15,11 @@ class Solution:
         return result
     
 
-    def betterSolution(self, s: str) -> str:
+    def makeFancyString(self, s: str) -> str:
             result = []
-            for c in s:
-                if len(result) < 2 or not (result[-1] == c and result[-2] == c):
-                    result.append(c)
+            for char in s:
+                if len(result) < 2 or not (result[-1] == char and result[-2] == char):
+                    result.append(char)
             return ''.join(result)
     
 # Initialize the Result: Start with an empty result string (or list in Python).
